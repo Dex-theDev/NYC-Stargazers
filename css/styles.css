@@ -1,0 +1,25 @@
+.photo-container, .picOfDay-container {
+    border: solid 2px black;
+    display: flex;
+    justify-content: space-evenly;
+    width: 65%;
+}
+h1 {
+    text-align: center;
+}
+input {
+    margin-bottom: 1em
+}
+span {
+    display: inline-block;
+    margin-bottom: 1em;
+}
+/*edit photo size */
+.today-image, .picOfDay {
+    width: 40%;
+    margin: .5em;
+}
+/* edit description size */
+.description-text, .description-text2 {
+    width: 40%;
+}
