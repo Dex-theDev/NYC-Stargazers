@@ -4,27 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap" rel="stylesheet"> 
+    
     <link rel="stylesheet" href="css/styles.css">
-    <title>Cool Title Coming Soon</title>
+    <title>NYC Stargazers</title>
 </head>
 <body>
-    <h1>Cool Stars Title</h1>
+    <h1>NYC Stargazers</h1>
     <h3>NASA's Picture of the Day:</h3>
     <span>(Today's Date)</span>
+    <p class="title1"></p>
     <div class="photo-container">
     <img class="today-image" src="" alt="Today's picture">
     <!--<p class="description">Description:</p>-->
+   
     <p class="description-text"></p>
     </div>
     <p class="instruction">Want to see more? Choose a past date to see more cool photos from NASA!</p>
+    <div class="input-box">
     <label for="date">Date:</label>
     <input type="date" id="date" name="date">
     <button>Check It Out</button>
+</div>
+
+<p class="title2"></p>
     <div class="picOfDay-container">
-    <img id="hidden" class="picOfDay" src="" alt="picture of the day">
+ 
+    <img id="hidden" class="picOfDay" src="" alt="">
     <!--iframe here-->
+    <iframe src="" ></iframe>
     <!--<p class="description">Description:</p>-->
+   
     <p class="description-text2"></p>
+    
     </div>
 
     <script type="text/javascript" src="js/main.js"></script>

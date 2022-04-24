@@ -1,25 +1,88 @@
+html {
+    font-size: 62.5%;
+    font-family: 'Teko', sans-serif;
+    color: white;
+}
 .photo-container, .picOfDay-container {
-    border: solid 2px black;
+    
     display: flex;
     justify-content: space-evenly;
     width: 65%;
+    margin: 0 auto;
 }
 h1 {
+    font-size: 8rem;
+}
+h3 {
+    font-size: 5rem;
+}
+h1,h3,span,.title1, .title2, .instruction, label {
     text-align: center;
+    font-family: 'Teko', sans-serif;
 }
 input {
     margin-bottom: 1em
 }
 span {
-    display: inline-block;
+    display: block;
     margin-bottom: 1em;
+    font-size: 2rem;
 }
 /*edit photo size */
-.today-image, .picOfDay {
+.today-image, .picOfDay, iframe {
     width: 40%;
     margin: .5em;
+    max-height: 40em;
 }
 /* edit description size */
 .description-text, .description-text2 {
     width: 40%;
+    font-size: 2rem;
+}
+.instruction {
+    text-align: center;
+    font-size: 3rem;
+}
+.input-box {
+    margin: 0 auto;
+    width: fit-content;
+}
+.title1, .title2{
+    text-align: center;
+    font-size: 2rem;
+}
+label {
+    font-size: 2rem;
+}
+body {
+    background-image: url('1239365.jpg');
+    background-size: cover;
+}
+/* Responsiveness */
+
+@media screen and (max-width: 1000px){
+
+   .description-text, .description-text2 {
+       width: 100%;
+   }
+   .photo-container, .picOfDay-container{
+       flex-direction: column;
+   }
+   .today-image, .picOfDay {
+       width: 60%;
+       margin: 0 auto;
+       height: 30em;
+   }
+}
+@media screen and (max-width: 600px){
+    .today-image, .picOfDay {
+        width: 80%;
+        margin: 0 auto;
+        height: 30em;
+    }
+}
+@media screen and (max-width: 428px){
+    .today-image, .picOfDay{
+        width: 100%;
+    }
 }
