@@ -1,13 +1,13 @@
 html {
     font-size: 62.5%;
     font-family: 'Teko', sans-serif;
-    color: white;
+    color: #ffffff;
 }
 .photo-container, .picOfDay-container {
     
     display: flex;
     justify-content: space-evenly;
-    width: 65%;
+    width: 100%;
     margin: 0 auto;
 }
 h1 {
@@ -26,7 +26,7 @@ input {
 span {
     display: block;
     margin-bottom: 1em;
-    font-size: 2rem;
+    font-size: 3rem;
 }
 /*edit photo size */
 .today-image, .picOfDay, iframe {
@@ -36,8 +36,9 @@ span {
 }
 /* edit description size */
 .description-text, .description-text2 {
-    width: 40%;
+    width: 90%;
     font-size: 2rem;
+    margin: 0 auto;
 }
 .instruction {
     text-align: center;
@@ -49,21 +50,37 @@ span {
 }
 .title1, .title2{
     text-align: center;
-    font-size: 2rem;
+    font-size: 3rem;
 }
 label {
     font-size: 2rem;
 }
 body {
-    background-image: url('1239365.jpg');
+    background-image: url('stellarbackground.jpg');
     background-size: cover;
+}
+.cover {
+    width: 80%;
+    height: auto;
+    border-radius: .5rem;
+    margin: 0 auto;
+    z-index: 2;
+    background: #e242c531;
+}
+.description-background {
+    width: 40%;
+    height: auto;
+    background-color: rgba(131, 17, 160, 0.404);
+    
 }
 /* Responsiveness */
 
 @media screen and (max-width: 1000px){
 
    .description-text, .description-text2 {
-       width: 100%;
+       width: 90%;
+       text-align: center;
+       margin: 0 auto;
    }
    .photo-container, .picOfDay-container{
        flex-direction: column;
@@ -73,16 +90,21 @@ body {
        margin: 0 auto;
        height: 30em;
    }
+   .description-background {
+       margin: 0 auto;
+       margin-top: 3em;
+       width: 65%;
+   }
 }
 @media screen and (max-width: 600px){
     .today-image, .picOfDay {
-        width: 80%;
+        width: 100%;
         margin: 0 auto;
         height: 30em;
     }
 }
 @media screen and (max-width: 428px){
     .today-image, .picOfDay{
-        width: 100%;
+        width: 80%;
     }
 }
