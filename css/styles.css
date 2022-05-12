@@ -11,10 +11,11 @@ html {
     margin: 0 auto;
 }
 h1 {
-    font-size: 8rem;
+    font-size: 3rem;
+    margin: 2% auto;
 }
 h3 {
-    font-size: 5rem;
+    font-size: 2rem;
 }
 h1,h3,span,.title1, .title2, .instruction, label {
     text-align: center;
@@ -25,14 +26,15 @@ input {
 }
 span {
     display: block;
-    margin-bottom: 1em;
-    font-size: 3rem;
+    margin-top: .25em;
+    font-size: 1.5rem;
 }
 /*edit photo size */
 .today-image, .picOfDay, iframe {
     width: 40%;
     margin: .5em;
     max-height: 40em;
+    border-radius: .5rem;
 }
 /* edit description size */
 .description-text, .description-text2 {
@@ -50,14 +52,23 @@ span {
 }
 .title1, .title2{
     text-align: center;
-    font-size: 3rem;
+    font-size: 5.5rem;
+}
+.title1 {
+    margin-bottom: .25em;
 }
 label {
     font-size: 2rem;
 }
 body {
-    background-image: url('stellarbackground.jpg');
+   /* background-image: url('stellarbackground.jpg');*/
+   background: black;
     background-size: cover;
+}
+.title-box {
+    border-bottom: whitesmoke 1px solid;
+    border-top: whitesmoke 1px solid;
+    
 }
 .cover {
     width: 80%;
@@ -68,9 +79,10 @@ body {
     background: #e242c531;
 }
 .description-background {
-    width: 40%;
+    width: 100%;
     height: auto;
     background-color: rgba(131, 17, 160, 0.404);
+    border-radius: .5rem;
     
 }
 /* Responsiveness */
@@ -93,7 +105,7 @@ body {
    .description-background {
        margin: 0 auto;
        margin-top: 3em;
-       width: 65%;
+       width: 100%;
    }
 }
 @media screen and (max-width: 600px){
@@ -106,5 +118,8 @@ body {
 @media screen and (max-width: 428px){
     .today-image, .picOfDay{
         width: 80%;
+    }
+    h1 {
+        font-size: 3rem;
     }
 }
